@@ -1,5 +1,5 @@
 import { Movies } from '../movies/movies.entity'
-import { Studios } from './studios/studios.entity'
+import { Studios } from '../studios/studios.entity'
 import { 
     Entity, Column, PrimaryGeneratedColumn, 
     CreateDateColumn, UpdateDateColumn, DeleteDateColumn, 
