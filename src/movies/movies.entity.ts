@@ -1,4 +1,5 @@
-import { Entity, Column, PrimaryGeneratedColumn, CreateDateColumn, UpdateDateColumn, DeleteDateColumn} from 'typeorm';
+import {Tags} from '../tags/tag.entity'
+import { Entity, Column, PrimaryGeneratedColumn, CreateDateColumn, UpdateDateColumn, DeleteDateColumn, ManyToMany, JoinTable} from 'typeorm';
 
 @Entity({name : 'movies'})
 export class Movies {
@@ -25,4 +26,18 @@ export class Movies {
 
     @DeleteDateColumn({name : 'deleted_at',  type: 'timestamp'})
     deleted_at: Date;
+
+    @ManyToMany(() => Tags)
+    @JoinTable({
+        name: 'movie_tags',
+        joinColumn: {
+            name: 'movie_id',
+            referencedColumnName: 'id',
+        },
+        inverseJoinColumn: {
+            name: 'tag_id',
+            referencedColumnName: 'id',
+        }
+    })
+    tags: Tags[]
 }
