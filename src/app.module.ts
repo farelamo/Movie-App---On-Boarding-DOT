@@ -7,6 +7,7 @@ import { MoviesModule } from './movies/movies.module';
 import { UsersModule } from './users/users.module';
 import { OrdersModule } from './orders/orders.module';
 import { OrderItemsModule } from './order_items/order_items.module';
+import { MovieScheduleModule } from './movie_schedule/movie_schedule.module';
 import 'dotenv/config'
 
 @Module({
@@ -27,7 +28,8 @@ import 'dotenv/config'
     MoviesModule,
     UsersModule,
     OrdersModule,
-    OrderItemsModule
+    OrderItemsModule,
+    MovieScheduleModule
   ],
   controllers: [AppController],
   providers: [AppService],
