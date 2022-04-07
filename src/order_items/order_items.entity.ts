@@ -1,5 +1,5 @@
 import { Orders } from '../orders/orders.entity'
-import { Schedule } from '../movie_schedule/movie_schedule.entity'
+import { Movie_Schedule } from '../movie_schedule/movie_schedule.entity'
 import { 
     Entity, Column, PrimaryGeneratedColumn, 
     CreateDateColumn, UpdateDateColumn, DeleteDateColumn, 
@@ -24,9 +24,9 @@ export class Orders_Items {
     // @JoinColumn({ name: "order_id" }) //invalid default value
     order_id: Orders;
 
-    @ManyToOne(() => Schedule, schedule => schedule.id)
-    // @JoinColumn({ name: "schedule_id" }) //invalid default value
-    schedule_id: Schedule;
+    @ManyToOne(() => Movie_Schedule, movie_schedule => movie_schedule.id)
+    // @JoinColumn({ name: "movie_schedule_id" }) //invalid default value
+    movie_schedule_id: Movie_Schedule;
     
     @CreateDateColumn({name : 'created_at',  type: 'timestamp'})
     created_at: Date;
