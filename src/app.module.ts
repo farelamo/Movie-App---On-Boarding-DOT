@@ -4,6 +4,7 @@ import { TypeOrmModule } from '@nestjs/typeorm'
 import { AppService } from './app.service';
 import { TagsModule } from './tags/tags.module';
 import { MoviesModule } from './movies/movies.module';
+import { UsersModule } from './users/users.module';
 import 'dotenv/config'
 
 @Module({
@@ -21,7 +22,8 @@ import 'dotenv/config'
       synchronize: true,
     }),
     TagsModule,
-    MoviesModule
+    MoviesModule,
+    UsersModule
   ],
   controllers: [AppController],
   providers: [AppService],
