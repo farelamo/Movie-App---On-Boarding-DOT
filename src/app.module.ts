@@ -5,6 +5,7 @@ import { AppService } from './app.service';
 import { TagsModule } from './tags/tags.module';
 import { MoviesModule } from './movies/movies.module';
 import { UsersModule } from './users/users.module';
+import { OrdersModule } from './orders/orders.module';
 import 'dotenv/config'
 
 @Module({
@@ -23,7 +24,8 @@ import 'dotenv/config'
     }),
     TagsModule,
     MoviesModule,
-    UsersModule
+    UsersModule,
+    OrdersModule
   ],
   controllers: [AppController],
   providers: [AppService],
