@@ -11,5 +11,5 @@ module.exports = {
     logging: true,
     dropSchema: false,
     synchronize: true,
-    entities : ['src/**/*.entity.ts', 'dist/**/*.entity.js']
+    entities : ['dist/**/*.entity{.ts,.js}']
 }
