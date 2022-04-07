@@ -6,6 +6,7 @@ import { TagsModule } from './tags/tags.module';
 import { MoviesModule } from './movies/movies.module';
 import { UsersModule } from './users/users.module';
 import { OrdersModule } from './orders/orders.module';
+import { OrderItemsModule } from './order_items/order_items.module';
 import 'dotenv/config'
 
 @Module({
@@ -25,7 +26,8 @@ import 'dotenv/config'
     TagsModule,
     MoviesModule,
     UsersModule,
-    OrdersModule
+    OrdersModule,
+    OrderItemsModule
   ],
   controllers: [AppController],
   providers: [AppService],
