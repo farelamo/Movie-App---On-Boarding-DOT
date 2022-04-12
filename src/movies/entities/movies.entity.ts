@@ -1,4 +1,4 @@
-import {Tags} from '../tags/tag.entity'
+import {Tags} from '../../tags/entities/tag.entity'
 import { Entity, Column, PrimaryGeneratedColumn, CreateDateColumn, UpdateDateColumn, DeleteDateColumn, ManyToMany, JoinTable} from 'typeorm';
 
 @Entity({name : 'movies'})

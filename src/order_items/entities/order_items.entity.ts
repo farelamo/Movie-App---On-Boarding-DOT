@@ -1,5 +1,5 @@
-import { Orders } from '../orders/orders.entity'
-import { Movie_Schedule } from '../movie_schedule/movie_schedule.entity'
+import { Orders } from '../../orders/entities/orders.entity'
+import { Movie_Schedule } from '../../movie_schedule/entities/movie_schedule.entity'
 import { 
     Entity, Column, PrimaryGeneratedColumn, 
     CreateDateColumn, UpdateDateColumn, DeleteDateColumn, 

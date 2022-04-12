@@ -1,4 +1,4 @@
-import {Users} from '../users/user.entity'
+import {Users} from '../../users/entities/user.entity'
 import { 
     Entity, Column, PrimaryGeneratedColumn, 
     CreateDateColumn, UpdateDateColumn, DeleteDateColumn, 
