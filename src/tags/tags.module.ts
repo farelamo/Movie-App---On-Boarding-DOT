@@ -1,6 +1,6 @@
 import { Module } from '@nestjs/common';
 import { TypeOrmModule } from '@nestjs/typeorm';
-import { TagsEntity } from './tag.entity'
+import { TagsEntity } from './entities/tag.entity'
 
 @Module({
     imports : [TypeOrmModule.forFeature([TagsEntity])]
